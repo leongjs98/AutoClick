@@ -22,13 +22,6 @@ def main():
     root.configure(bg=BG_GREY)
     root.resizable(width=False, height=False)
 
-    # Logo
-    img = Image.open('./icon/logo.png')
-    img = ImageTk.PhotoImage(img)
-    logo = Label(root, image=img)
-    logo.config(bg=BG_GREY)
-    logo.grid(row=0, column=0, columnspan=2)
-
     # Instruction 
     inst_btn = Button(root, text='Show instruction', command=show_inst, width=15, height=1)
     inst_btn.config(font=FONT_STYLE, bg='grey', fg='white')
